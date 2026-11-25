@@ -47,6 +47,7 @@ bulk recording retrieval from multiple Reolink RLC-811A cameras.
 
 ---
 
+<!-- Re-enable once screenshots/application.png is added:
 ## Application Preview
 
 <div align="center">
@@ -57,7 +58,7 @@ bulk recording retrieval from multiple Reolink RLC-811A cameras.
 
 </div>
 
----
+-->
 
 ## Features
 
@@ -158,8 +159,12 @@ C:\Tools\ReolinkDownloader\CameraDownloader.ps1
 
 Open the PowerShell script in your preferred text editor.
 
-Locate the configured camera IP addresses and replace them
-with the addresses of your own cameras.
+Locate the `$CameraIPs` line near the top of the script and
+replace the example addresses with those of your own cameras:
+
+```powershell
+$CameraIPs = @('192.168.1.101','192.168.1.102','192.168.1.103')
+```
 
 Example camera inventory:
 
@@ -547,6 +552,16 @@ management layer for the existing open-source
 Credit for the underlying camera communication and recording
 retrieval functionality belongs to the original project and
 its dependencies.
+
+---
+
+## License
+
+This project is licensed under the GNU General Public License v3.0.
+See [LICENSE](LICENSE) for details.
+
+The `reolink-downloader` backend is a separate project distributed
+under its own license and is not included in this repository.
 
 ---
 

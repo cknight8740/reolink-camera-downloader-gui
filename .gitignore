@@ -1,0 +1,15 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors
+.vscode/
+*.swp
+
+# Downloaded recordings and logs (never commit footage)
+*.mp4
+*.mkv
+*.avi
+*.log
